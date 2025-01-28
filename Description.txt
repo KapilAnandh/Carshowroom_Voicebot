@@ -1,0 +1,43 @@
+##VoiceBot for Car Showroom Integrated with Google Calendar##
+
+Description
+This project is a voice-controlled assistant designed for car showrooms. It assists users with car model inquiries, features, pricing, and appointment scheduling for test drives. The voicebot is integrated with Google Calendar to seamlessly schedule and manage appointments.
+
+Features
+Voice Interaction: Uses speech recognition to understand user queries and responds with text-to-speech (TTS).
+Google Calendar Integration:
+Authenticate using Google Calendar API.
+Schedule appointments with automatic time conflict checks.
+Car Information:
+Provides details about available car models, features, pricing, and availability.
+Dynamic Appointment Booking: Accepts user input for date and time to book appointments.
+Custom Responses:
+Suggests next steps based on user interactions.
+Handles fallback responses for unrecognized queries.
+Tech Stack
+Programming Language: Python
+Libraries Used:
+speech_recognition: For voice input.
+pyttsx3: For text-to-speech conversion.
+googleapiclient: For interacting with Google Calendar API.
+dateutil: For parsing date and time.
+pickle: For token management.
+APIs: Google Calendar API
+How It Works
+Initialize the Assistant:
+
+Launch the program, and it greets the user with available car options.
+Voice Input Processing:
+
+Listens to the user query using a microphone.
+Recognizes the query using speech_recognition.
+Response Handling:
+
+Processes the query to provide car information or guides the user to book an appointment.
+Appointment Booking:
+
+Asks the user for a preferred date and time.
+Adds the appointment to Google Calendar if the time slot is available.
+Exit:
+
+Ends the interaction when the user says "exit" or "bye."
